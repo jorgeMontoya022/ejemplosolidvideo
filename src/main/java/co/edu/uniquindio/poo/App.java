@@ -6,6 +6,11 @@ package co.edu.uniquindio.poo;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        EmpleadoProgramador empleadoProgramador = new EmpleadoProgramador("Jorge", 800000);
+        EmpleadoRegular empleadoRegular = new EmpleadoRegular("William", 750000);
+
+        GestionarEmpleado gestionarEmpleado = new GestionarEmpleado();
+        gestionarEmpleado.agregarEmpleados(empleadoProgramador);
+        gestionarEmpleado.agregarEmpleados(empleadoRegular);
     }
 }
